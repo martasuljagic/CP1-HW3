@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
+
 int try(char in, char word[], int n, char guess[]) //one try
 {
     if(strchr(word, in) > 0) //checking if its there
@@ -15,6 +16,7 @@ int try(char in, char word[], int n, char guess[]) //one try
         }  
     return 0;
     }
+
     else
     {
         return 1;
@@ -25,6 +27,7 @@ void drawing(int mistakes) // could have been done better
     switch (mistakes)
     {
         case 0:
+
         break;
         case 1:
             printf("O \n");
@@ -142,6 +145,7 @@ int main()
                 printf("\nYou won!\n");
                 break;
             }
+            
             i++;
     }
 

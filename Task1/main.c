@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 int inputCheck(char input, int current)
 {
     int floor;
@@ -60,8 +61,8 @@ void ride(char input, int floor, int current, int peopleOnElevator, int peopleOn
     int pass = 1; //no of passengers
     while(peopleOnElevator > 0) //riding
     {
-    printf("Where do you want to go? [B1, B2, B3, G, 1, 2, 3, 4, 5].\nDo you want to leave, type 'y'? Did someone enter, type 'p'?\n");
-    scanf(" %c", &input); // i hate c, because it won't take ony 1 char without space before %c
+        printf("Where do you want to go? [B1, B2, B3, G, 1, 2, 3, 4, 5].\nDo you want to leave, type 'y'? Did someone enter, type 'p'?\n");
+        scanf(" %c", &input); // i hate c, because it won't take ony 1 char without space before %c
     if(input == 'p') //if someone entered
     {
         peopleOnElevator++;
